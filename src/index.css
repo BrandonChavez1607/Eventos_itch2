@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+:root{--primary:42 63 143;--accent:143 42 68;--sport:47 143 91;--ink:31 35 51;--paper:246 247 251;--card:255 255 255;--line:226 229 238;
+  box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--primary:122 146 235;--accent:214 105 137;--sport:79 186 127;--ink:232 235 245;--paper:16 18 28;--card:26 29 43;--line:44 49 71}}
+:root[data-theme="dark"]{--primary:122 146 235;--accent:214 105 137;--sport:79 186 127;--ink:232 235 245;--paper:16 18 28;--card:26 29 43;--line:44 49 71}
+html{scroll-behavior:smooth;scroll-padding-top:5rem}
+body{font-family:Inter,sans-serif;background:rgb(var(--paper));color:rgb(var(--ink))}
+h1,h2,h3{font-family:Poppins,sans-serif}
+.g-deportivo{background:linear-gradient(135deg,#2f8f5b,#4fb07a)}.g-academico{background:linear-gradient(135deg,#2a3f8f,#4a5db0)}.g-cultural{background:linear-gradient(135deg,#8f2a44,#b04a63)}
+.btn{border-radius:.5rem;padding:.6rem 1.1rem;font-size:.875rem;font-weight:600;transition:.15s}
+.inp{width:100%;border-radius:.5rem;border:1px solid rgb(var(--line));background:rgb(var(--card));padding:.6rem .8rem;font-size:.875rem;outline:none}
+.inp:focus{border-color:rgb(var(--primary));box-shadow:0 0 0 3px rgb(var(--primary)/.2)}
+@keyframes fadein{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
